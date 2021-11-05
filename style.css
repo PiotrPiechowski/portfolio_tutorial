@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+section {
+    padding: 100px;
+}
+
+/*-----------------
+Header Section
+-------------------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+} 
+header.sticky {
+    background-color: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header.sticky .logo {
+    color: #111;
+}
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+header.sticky ul li a {
+    color: #111;
+}
+
+/*-----------------
+Banner Section
+-------------------*/
+.banner { 
+    position: relative;
+    min-height: 100vh;
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1,5em;
+}
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.banner h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #fff;
+}
+.btn {
+    position: relative;
+    background: #2169f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+/*-----------------
+About Section
+-------------------*/
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.content .about-1 {
+    padding-right: 30px;
+    
+}
+.content .about-1 h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.image {
+    min-width: 50%;
+}
+.img {
+    max-width: 100%;
+
+}
+/*-----------------
+Services Section
+-------------------*/
+.services {
+    background-color: #111;
+}
+.heading-1 {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .services-1 {
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.services .content .services-1:hover {
+    background: #2169f3;
+}
+.services .content .services-1 img {
+    max-width: 80px;
+    filter:invert(1);
+}
+.services .content .services-1 h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*-----------------
+Work Section
+-------------------*/
+.work .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.work .content .work-1 {
+    width: 50%;
+    padding: 20px;
+}
+.work .content .work-1 img {
+    max-width: 100%;
+}
+
+/*-----------------
+Testimonials Section
+-------------------*/
+.testimonial {
+    background: #f7f7f7;
+}
+.testimonial .heading .content  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.testimonial .content .testimonial-1 {
+    min-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #2196f3;
+}
+.testimonial .content .testimonial-1 p {
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+.testimonial .content .testimonial-1 h3 {
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1rem;
+}
+.testimonial .content .testimonial-1 h3 span {
+    font-size: 14px;
+    font-weight: 400;
+}
+/*-----------------
+Contact Section
+-------------------*/
+.contact {
+    background-color: #111;
+}
+.form { 
+    min-width: 60%
+}
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-1 h3,
+.form form h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.form form input,
+.form form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;  
+}
+.form form textarea {
+    min-height: 200px;
+}
+.form form input::placeholder,
+.form form textarea::placeholder {
+    color: #999;
+}
+.form form input[type="submit"] {
+    max-width: 100px;
+    background: #2169f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contact-1 {
+    min-width: 40%;
+}
+.contact-2 {
+    position: relative;
+}
+.contact-2 .box {
+    position: relative;
+    padding: 20px;
+    display: flex;
+}
+.contact-2 .box .icon {
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+.contact-2 .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300
+}
+.contact-2 .box .text h3 {
+    font-weight: 500;
+    color:#2169f3;
+    margin-bottom: 0;
+}
+/*-----------------
+Copyright Section
+-------------------*/
+.copyright {
+    background: #111;
+    padding-bottom: 30px;
+    
+}
+.copyright p {
+    font-size: 20px;
+    color: #2169f3;
+    text-align: center;
+}
+
+/*-----------------
+Responsive
+-------------------*/
+@media (max-width: 991px) {
+    header,
+    header.sticky {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }
+    .menu.active {
+        left: 0;
+    }
+    header ul li a {
+        color:#111;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(./images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active {
+        background: url(./images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    header.sticky .toggle {
+        filter:invert(1);
+    }
+    section {
+        padding: 100px 50px;
+    }
+    .banner {
+        padding: 150px 50px 100px;
+    }
+    .banner h2 {
+        font-size: 1.5em;
+    }
+    .banner h3 {
+        font-size: 1em;
+    }
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2 {
+        font-size: 24px;
+    }
+    .content .about-1 h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .about-1 p {
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+    .services .content .services-1 {
+        margin: 10px;
+    }
+    .work .content .work-1 {
+        width: 100%;
+        text-align: center;
+    }
+    .testimonial {
+        padding-top: 1px;
+    }
+    .testimonial .content .testimonial-1 {
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 10px;
+        background: #2169f3
+    }
+}
+
+@media (max-width: 600px) {
+    header,
+    header.sticky {
+        padding: 20px 50px;
+    }
+    .banner {
+        padding: 150px 20px 100px;
+    }
+    section {
+        padding: 100px 20px;
+    }
+}
+
+    
+
+
+
+
